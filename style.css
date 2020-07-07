@@ -1,0 +1,98 @@
+body{
+  border:5px solid lightblue;
+  background:#123;
+}
+
+@viewport{
+zoom:1.0;
+width;extend-to-zoom;
+}
+
+@-ms-viewport{
+width:extend-to-zoom;
+zoom:1.0;
+}
+
+.box{
+  left:40%;
+  top:50%;
+  position:absolute;
+  transform:translate(-50%,-50%);
+}
+
+.box .logo{
+  position:relative;
+  left:63%;
+  top:10px;;
+  border:5px solid lightblue;
+  border-radius:50%;
+  height:150px;
+  width:150px;
+  background:grey;
+  margin-bottom:20px;;
+}
+
+.box .form{
+  position:relative;
+  left:38%;
+  padding:5px;
+}
+
+.box .form h1{
+  position:relative;
+  left:50px;
+  color:lightblue;
+}
+
+.box .form .login h1{
+  position:relative;
+  left:120px;
+  color:lightblue;
+}
+
+.box .form input{
+  position:relative;
+  width:350px;
+  outline:none;
+  border:none;
+  font-size:17px;
+  border-bottom:5px solid lightblue;
+  background:transparent;
+  color:white;
+  height:30px;
+  padding:5px;
+  margin-bottom:25px;
+}
+
+.box .form label{
+  position:absolute;
+  left:10px;
+  top:5px;
+  pointer-events:none;
+  color:white;
+  transition:.5s;
+}
+
+
+.box .submit button{
+  position:relative;
+  left:90%;
+  width:90px;
+  padding:5px;
+  outline:none;
+  background:lightblue;
+}
+
+.box .repeat a{
+  position:relative;
+  color:#fff;
+  left:41%;
+  font-size:20px;
+}
+
+.box .form input:focus ~ label,
+.box .form input:valid ~ label{
+top:-10px;
+font-size:13px;
+color:lightblue
+}
